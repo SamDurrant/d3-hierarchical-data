@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #fffcff;
+  --medium: #c3b299;
+  --dark: #50514f;
+  --accent-light: #cbd4c2;
+  --accent-medium: #247ba0;
+}
+
+body {
+  background: var(--light);
+  font-family: sans-serif;
+  color: var(--dark);
+}
+
+nav {
+  background: var(--accent-medium);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+nav h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  width: 80%;
+  max-width: 75rem;
+  margin: 5rem auto 3rem;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  padding: 1rem;
+}
