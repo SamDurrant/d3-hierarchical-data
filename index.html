@@ -11,14 +11,34 @@
       <h3>- Hierarchical Data -</h3>
       <p>An exploration into data</p>
     </nav>
+    <section class="section">
+      <h2>Hierarchical Corp</h2>
+      <button id="open-modal">add</button>
+    </section>
+    <section class="section">
+      <div class="tree-canvas"></div>
+    </section>
     <section class="section" id="section">
       <div class="canvas"></div>
     </section>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button id="close-modal">X</button>
+        <form class="form" id="employee-form">
+          <input type="text" id="name" placeholder="employee name" />
+          <input type="text" id="parent" placeholder="reports to..." />
+          <input type="text" id="department" placeholder="department" />
+          <button class="button-center">add employee</button>
+        </form>
+      </div>
+    </div>
   </body>
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
   <script src="firebaseConfig.js"></script>
   <script src="https://d3js.org/d3.v6.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+  <script src="bubble.js"></script>
   <script src="index.js"></script>
+  <script src="graph.js"></script>
 </html>
